@@ -1,6 +1,11 @@
 # aTES
 popug Awesome Task Exchange System 
 
+week 0 
+schema: ![Alt text](resources/aTES-week_0.jpg?raw=true "Week 0")
+
+week 1 (added events description. actor, command, event, query)
+see section 'week 1'
 https://miro.com/app/board/o9J_loqvkcU=/
 
 invite link:
