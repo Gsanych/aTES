@@ -1,0 +1,32 @@
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 5000
+server:
+  port: 8443
+spring:
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate.ddl-auto: update
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/ates
+    username: root
+    password: 1
+    driver-class-name: com.mysql.jdbc.Driver
+
+hystrix:
+  command:
+    clinic-management-service:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+    patient-management-service:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
